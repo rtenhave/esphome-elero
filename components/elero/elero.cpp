@@ -111,6 +111,7 @@ void Elero::init() {
   this->write_reg(CC1101_TEST1, 0x35);
   this->write_reg(CC1101_TEST0, 0x09);
   this->write_reg(CC1101_IOCFG0, 0x06);
+  this->write_reg(CC1101_IOCFG2, 0x0D);
   this->write_reg(CC1101_PKTCTRL1, 0x8C);  
   this->write_reg(CC1101_PKTCTRL0, 0x45);
   this->write_reg(CC1101_ADDR, 0x00);
