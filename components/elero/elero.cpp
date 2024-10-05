@@ -81,6 +81,8 @@ void Elero::reset() {
 void Elero::init() {
   uint8_t patable_data[] = {0xc0, 0xc0, 0xc0, 0xc0, 0xc0, 0xc0, 0xc0, 0xc0};
 
+  ESP_LOGI(TAG, "Ofniiiiieeee");
+
   this->write_reg(CC1101_FSCTRL1, 0x08);
   this->write_reg(CC1101_FSCTRL0, 0x00);
   this->write_reg(CC1101_FREQ2, this->freq2_);
